@@ -1,0 +1,442 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.titulo{
+    color: #512eff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+
+    background: -webkit-linear-gradient(to right, #684aff80, #512eff80);
+
+    background: linear-gradient(to right, #684aff80, #512eff80), url(../img/paisaje.JPEG);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+nav{
+    text-align: right;
+    padding:  30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+   text-decoration: underline;
+}
+
+.wave{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*Sobre ti*/
+
+.sobre-nosotros{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.imagen-sobre-nosotros{
+    width: 20%;
+    border-radius: 10px;
+}
+
+.contenido-texto{
+    width: 48%;
+}
+
+.contenido-texto h3{
+    margin-bottom: 15px;
+    
+}
+
+.contenido-texto h3 span{
+    background: #512eff;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+   
+}
+
+.contenido-texto p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Galerio*/
+
+.portafolios{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display:flex ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow:  hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:  block;
+    
+}
+
+/*Redes*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.cards .card{
+    background: #6348e8cd;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover ;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*Equipo*/
+
+.sobre-servicio{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+    
+
+}
+
+.servicio-ind img{
+    width: 90%;
+    border-radius: 20px;
+    
+    
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+    
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Footer*/
+
+
+footer{
+    background: #414141;
+    padding:  60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom:  1px solid #ccc;
+
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom:  3px solid #512effcd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+    
+}
+
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-texto{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .imagen-sobre-nosotros{
+        width: 70%;
+    }
+
+    /*Galeria*/
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /*clietes*/
+    
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+
+    /*Servicios*/
+
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0 ;
+
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /*Sobre nosotros*/
+
+    .sobre-nosotros{
+        margin-top: 50px;
+    }
+
+    .imagen-sobre-nosotros{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-texto{
+        width: 95%;
+
+    }
+
+    /*galeria*/
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /*cliente*/
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 150px;
+        height: 150px;
+    }
+
+    /*Nuestros servicios*/
+
+
+    /*Footer*/
+
+    .contenedor-footer{
+        flex-direction: column;
+        
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+
+}
